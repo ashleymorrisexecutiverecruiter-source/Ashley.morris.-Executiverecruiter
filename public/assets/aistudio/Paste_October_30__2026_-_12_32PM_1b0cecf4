@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashley Morris | Senior Recruiter &amp; Talent Acquisition</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Discover Ashley Morris's professional approach to talent acquisition, recruitment strategy, talent management, and workforce development." />
+  <meta name="keywords" content="Ashley Morris Senior Recruiter, Talent Acquisition Professional, Recruitment Strategy, Talent Sourcing, Talent Management, Workforce Development, Recruitment Program Management" />
+  <meta name="author" content="Ashley Morris" />
+  <meta property="og:title" content="Ashley Morris | Senior Recruiter &amp; Talent Acquisition" />
+  <meta property="og:description" content="Connecting Great Talent With Meaningful Opportunities. Thoughtful recruitment and strategic talent solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ashleymorris.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon: AM Monogram (Inline SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2310233F'/><text x='50%' y='62%' font-family='serif' font-size='46' fill='%23C6A15B' text-anchor='middle' font-weight='600'>AM</text></svg>" />
+
+  <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Sans-Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN with customized theme tokens -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#10233F',
+              ivory: '#F8F6F1',
+              gold: '#C6A15B',
+              'gold-hover': '#B38F46',
+              white: '#FFFFFF',
+              slate: '#697586',
+              surface: '#F1EFEA',
+              border: '#E4DFD5'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Editorial typography & luxury touches */
+    ::selection {
+      background-color: #C6A15B;
+      color: #FFFFFF;
+    }
+    .gold-accent-line {
+      display: inline-block;
+      width: 48px;
+      height: 2px;
+      background-color: #C6A15B;
+      vertical-align: middle;
+      margin-right: 12px;
+    }
+    .subtle-border {
+      border: 1px solid rgba(16, 35, 63, 0.08);
+    }
+    .gold-glow:hover {
+      box-shadow: 0 10px 25px -5px rgba(198, 161, 91, 0.2);
+    }
+  </style>
+</head>
+
+<body class="bg-brand-ivory text-brand-navy font-sans antialiased selection:bg-brand-gold selection:text-white flex flex-col min-h-screen">
+
+  <!-- ============================================================== -->
+  <!-- HEADER & NAVIGATION                                            -->
+  <!-- ============================================================== -->
+  <header class="sticky top-0 z-50 bg-brand-ivory/95 backdrop-blur-md border-b border-brand-border/60 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo / Monogram -->
+      <a href="#home" class="flex items-center gap-3.5 group focus:outline-none focus:ring-2 focus:ring-brand-gold rounded p-1">
+        <div class="w-10 h-10 rounded-sm bg-brand-navy flex items-center justify-center text-brand-gold font-serif font-semibold text-lg tracking-wider border border-brand-gold/30 group-hover:border-brand-gold transition-colors">
+          AM
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-lg tracking-wider font-semibold text-brand-navy">ASHLEY MORRIS</span>
+          <span class="text-[10px] tracking-widest text-brand-slate uppercase font-medium">Talent Acquisition</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold uppercase tracking-widest text-brand-navy/80" aria-label="Main Navigation">
+        <a href="#about" class="hover:text-brand-gold transition-colors">About</a>
+        <a href="#expertise" class="hover:text-brand-gold transition-colors">Expertise</a>
+        <a href="#for-employers" class="hover:text-brand-gold transition-colors">For Employers</a>
+        <a href="#for-candidates" class="hover:text-brand-gold transition-colors">For Candidates</a>
+        <a href="#insights" class="hover:text-brand-gold transition-colors">Insights</a>
+        <a href="#contact" class="hover:text-brand-gold transition-colors">Contact</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden md:flex items-center">
+        <a href="#contact" onclick="setContactPurpose('Recruitment Partnership')" class="px-5 py-2.5 text-xs font-semibold uppercase tracking-widest bg-brand-navy text-white hover:bg-brand-gold transition-all duration-300 rounded shadow-sm">
+          Let’s Connect
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex md:hidden">
+        <button id="mobileMenuBtn" type="button" class="p-2 text-brand-navy hover:text-brand-gold focus:outline-none" aria-label="Toggle navigation menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menuIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden border-b border-brand-border bg-brand-ivory px-6 pt-4 pb-6 space-y-4">
+      <nav class="flex flex-col space-y-3 text-sm font-semibold uppercase tracking-wider text-brand-navy">
+        <a href="#about" class="mobile-nav-link hover:text-brand-gold py-1">About</a>
+        <a href="#expertise" class="mobile-nav-link hover:text-brand-gold py-1">Expertise</a>
+        <a href="#for-employers" class="mobile-nav-link hover:text-brand-gold py-1">For Employers</a>
+        <a href="#for-candidates" class="mobile-nav-link hover:text-brand-gold py-1">For Candidates</a>
+        <a href="#insights" class="mobile-nav-link hover:text-brand-gold py-1">Insights</a>
+        <a href="#contact" class="mobile-nav-link hover:text-brand-gold py-1">Contact</a>
+      </nav>
+      <div class="pt-2 border-t border-brand-border">
+        <a href="#contact" onclick="setContactPurpose('Recruitment Partnership')" class="block text-center w-full py-2.5 text-xs font-semibold uppercase tracking-widest bg-brand-navy text-white rounded">
+          Let’s Connect
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+
+    <!-- ============================================================== -->
+    <!-- SECTION 1: HERO SECTION                                        -->
+    <!-- ============================================================== -->
+    <section id="home" class="relative py-16 md:py-24 lg:py-28 overflow-hidden bg-brand-ivory border-b border-brand-border">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Text Column (Left) -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2">
+              <span class="w-6 h-[1.5px] bg-brand-gold"></span>
+              <span class="text-xs font-bold uppercase tracking-widest text-brand-gold">People Build Possibilities</span>
+            </div>
+
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-brand-navy leading-tight tracking-tight">
+              Connecting Great Talent With Meaningful Opportunities.
+            </h1>
+
+            <p class="text-lg md:text-xl font-serif text-brand-gold italic">
+              Strategic Talent Acquisition &amp; Recruitment Solutions.
+            </p>
+
+            <div class="space-y-4 text-brand-slate text-base md:text-lg leading-relaxed max-w-2xl font-normal">
+              <p>
+                I'm <strong>Ashley Morris</strong>, a Senior Recruiter focused on talent acquisition, recruitment strategy, and building meaningful connections between people and opportunities.
+              </p>
+              <p class="text-sm md:text-base leading-relaxed text-brand-navy/80">
+                I believe effective recruitment starts with understanding people, business priorities, and the qualities that help individuals and organizations succeed together. My approach combines thoughtful talent sourcing, strategic hiring, and relationship-driven recruitment.
+              </p>
+            </div>
+
+            <div class="pt-4 flex flex-wrap items-center gap-4">
+              <a href="#contact" class="px-7 py-3.5 bg-brand-navy hover:bg-brand-gold text-white font-medium text-xs uppercase tracking-widest transition-all duration-300 rounded shadow-md hover:shadow-lg">
+                Connect With Ashley
+              </a>
+              <a href="#expertise" class="px-7 py-3.5 border border-brand-navy/30 hover:border-brand-navy text-brand-navy font-medium text-xs uppercase tracking-widest transition-colors duration-300 rounded">
+                Explore My Expertise
+              </a>
+            </div>
+
+            <!-- Value Prop Pills -->
+            <div class="pt-8 border-t border-brand-border/80 flex flex-wrap gap-y-2 gap-x-6 text-xs text-brand-slate font-medium">
+              <span class="flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Strategic Sourcing
+              </span>
+              <span class="flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Structured Hiring Alignment
+              </span>
+              <span class="flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Relationship-First Practice
+              </span>
+            </div>
+          </div>
+
+          <!-- Visual Column (Right: Portrait Panel) -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-md">
+              <!-- Decorative Backing Box -->
+              <div class="absolute -top-4 -left-4 w-full h-full border-2 border-brand-gold/40 rounded-sm pointer-events-none transform -rotate-1"></div>
+              
+              <div class="relative bg-brand-white p-3 rounded shadow-xl border border-brand-border">
+                <!-- Representative Professional Portrait Mockup Container -->
+                <div class="relative aspect-[4/5] bg-brand-surface rounded overflow-hidden flex flex-col justify-between p-6 border border-brand-border/50">
+                  <div class="flex justify-between items-start">
+                    <span class="px-2.5 py-1 bg-brand-navy/90 text-brand-gold text-[10px] uppercase font-bold tracking-wider rounded">Executive Search Standard</span>
+                    <div class="w-8 h-8 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-gold">
+                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- Professional Portrait Visual Element -->
+                  <div class="my-auto text-center space-y-3">
+                    <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-tr from-brand-navy to-brand-slate/40 flex items-center justify-center text-brand-gold border-4 border-brand-white shadow-inner">
+                      <span class="font-serif text-3xl font-semibold tracking-wider">AM</span>
+                    </div>
+                    <p class="text-xs text-brand-slate italic font-serif">
+                      [Professional Portrait: Ashley Morris]
+                    </p>
+                  </div>
+
+                  <div class="bg-brand-navy text-white p-3.5 rounded text-left">
+                    <p class="font-serif text-sm font-semibold tracking-wide">Ashley Morris</p>
+                    <p class="text-[11px] text-brand-gold tracking-wider">Senior Recruiter | Talent Strategy</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 2: ABOUT ASHLEY                                        -->
+    <!-- ============================================================== -->
+    <section id="about" class="py-20 md:py-28 bg-brand-white border-b border-brand-border">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        
+        <div class="max-w-3xl mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-gold">About Ashley Morris</span>
+          <h2 class="mt-2 font-serif text-3xl md:text-4xl text-brand-navy">
+            Recruitment Is About People. Success Is About the Right Connections.
+          </h2>
+          <p class="mt-4 text-brand-slate text-base md:text-lg leading-relaxed">
+            Thoughtful recruitment. Strategic talent solutions. Meaningful connections.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Philosophy Narrative (Left) -->
+          <div class="lg:col-span-7 space-y-6 text-brand-slate leading-relaxed">
+            <p class="text-lg text-brand-navy font-normal border-l-2 border-brand-gold pl-4 italic">
+              "My approach to recruitment is rooted in the belief that great hiring decisions begin with understanding people."
+            </p>
+            <p>
+              Beyond matching qualifications to job descriptions, I value the alignment between individual strengths, career aspirations, organizational needs, and long-term business goals.
+            </p>
+            <p>
+              Through a people-centered and strategic approach to talent acquisition, I aim to support meaningful professional connections and help organizations think more intentionally about the talent they bring into their teams.
+            </p>
+            <p>
+              Hiring in evolving industries requires a balance between rigorous competency mapping and mutual cultural resonance. I collaborate directly with executives, hiring managers, and candidates to create a recruitment lifecycle characterized by dignity, analytical rigor, and complete transparency.
+            </p>
+
+            <div class="pt-4">
+              <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-navy text-white hover:bg-brand-gold transition-colors text-xs font-semibold uppercase tracking-widest rounded">
+                <span>Connect With Me</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Structured Credentials / Editable Placeholders (Right) -->
+          <div class="lg:col-span-5 bg-brand-ivory p-8 rounded-lg border border-brand-border space-y-6">
+            <h3 class="font-serif text-xl text-brand-navy font-semibold pb-2 border-b border-brand-border">
+              Professional Credentials &amp; Practice
+            </h3>
+
+            <!-- Editable Section 1: Professional Background -->
+            <div>
+              <p class="text-xs uppercase font-bold text-brand-gold tracking-wider">Professional Background</p>
+              <p class="text-sm text-brand-navy mt-1">
+                Senior Recruiter specializing in end-to-end recruitment lifecycle, talent acquisition roadmaps, and stakeholder alignment.
+              </p>
+              <span class="inline-block mt-1 text-[11px] text-brand-slate italic">[Editable: Detailed employment history to be confirmed by Ashley]</span>
+            </div>
+
+            <!-- Editable Section 2: Recruitment Philosophy -->
+            <div>
+              <p class="text-xs uppercase font-bold text-brand-gold tracking-wider">Recruitment Philosophy</p>
+              <p class="text-sm text-brand-navy mt-1">
+                High-touch, high-context engagement. Prioritizing candidate long-term trajectory and organizational health over transactional volume.
+              </p>
+            </div>
+
+            <!-- Editable Section 3: Qualifications & Industry Scope -->
+            <div>
+              <p class="text-xs uppercase font-bold text-brand-gold tracking-wider">Core Industry Focus</p>
+              <div class="flex flex-wrap gap-1.5 mt-2">
+                <span class="px-2 py-1 bg-brand-white border border-brand-border text-xs text-brand-navy rounded">Executive Search</span>
+                <span class="px-2 py-1 bg-brand-white border border-brand-border text-xs text-brand-navy rounded">Strategic Sourcing</span>
+                <span class="px-2 py-1 bg-brand-white border border-brand-border text-xs text-brand-navy rounded">HR &amp; People Operations</span>
+                <span class="px-2 py-1 bg-brand-white border border-brand-border text-xs text-brand-navy rounded">Workforce Planning</span>
+              </div>
+              <span class="inline-block mt-2 text-[11px] text-brand-slate italic">[Editable: Specialized certifications and degree accreditations placeholder]</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 3: EXPERTISE AND SERVICES                              -->
+    <!-- ============================================================== -->
+    <section id="expertise" class="py-20 md:py-28 bg-brand-ivory border-b border-brand-border">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-gold">Areas of Expertise</span>
+          <h2 class="mt-2 font-serif text-3xl md:text-4xl text-brand-navy">
+            Talent Solutions Built Around People and Business Priorities
+          </h2>
+          <p class="mt-4 text-brand-slate text-sm md:text-base">
+            These focus areas represent core capabilities developed through professional recruitment practice, designed to adapt flexibly to individual organizational needs.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Card 1 -->
+          <div class="bg-brand-white p-8 rounded border border-brand-border hover:border-brand-gold transition-all duration-300 gold-glow flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded bg-brand-ivory border border-brand-border flex items-center justify-center text-brand-navy mb-6">
+                <!-- Line Icon: Search / Identification -->
+                <svg class="w-6 h-6 stroke-current text-brand-gold" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              </div>
+              <h3 class="font-serif text-xl font-semibold text-brand-navy mb-3">Talent Acquisition</h3>
+              <p class="text-sm text-brand-slate leading-relaxed mb-6">
+                Supporting the structured process of identifying, attracting, evaluating, and engaging prospective professionals whose capabilities and values closely align with organizational requirements.
+              </p>
+            </div>
+            <a href="#contact" onclick="setContactPurpose('Hiring or Talent Acquisition')" class="text-xs font-bold uppercase tracking-wider text-brand-gold hover:text-brand-navy transition-colors inline-flex items-center gap-1.5">
+              Inquire Regarding Acquisition &rarr;
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-brand-white p-8 rounded border border-brand-border hover:border-brand-gold transition-all duration-300 gold-glow flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded bg-brand-ivory border border-brand-border flex items-center justify-center text-brand-navy mb-6">
+                <!-- Line Icon: Strategy / Hierarchy -->
+                <svg class="w-6 h-6 stroke-current text-brand-gold" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+              </div>
+              <h3 class="font-serif text-xl font-semibold text-brand-navy mb-3">Recruitment Strategy</h3>
+              <p class="text-sm text-brand-slate leading-relaxed mb-6">
+                Designing structured hiring processes, sourcing blueprints, and recruitment capacity plans that establish clear alignment between immediate hiring needs and broader business objectives.
+              </p>
+            </div>
+            <a href="#contact" onclick="setContactPurpose('Recruitment Partnership')" class="text-xs font-bold uppercase tracking-wider text-brand-gold hover:text-brand-navy transition-colors inline-flex items-center gap-1.5">
+              Discuss Strategy &rarr;
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-brand-white p-8 rounded border border-brand-border hover:border-brand-gold transition-all duration-300 gold-glow flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded bg-brand-ivory border border-brand-border flex items-center justify-center text-brand-navy mb-6">
+                <!-- Line Icon: Relationship / User Engagement -->
+                <svg class="w-6 h-6 stroke-current text-brand-gold" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+              </div>
+              <h3 class="font-serif text-xl font-semibold text-brand-navy mb-3">Candidate Engagement</h3>
+              <p class="text-sm text-brand-slate leading-relaxed mb-6">
+                Conducting nuanced market research, respectful direct outreach, and relational communication that provides candidates with a transparent and dignified hiring experience.
+              </p>
+            </div>
+            <a href="#contact" onclick="setContactPurpose('Candidate Inquiry')" class="text-xs font-bold uppercase tracking-wider text-brand-gold hover:text-brand-navy transition-colors inline-flex items-center gap-1.5">
+              Connect on Engagement &rarr;
+            </a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-brand-white p-8 rounded border border-brand-border hover:border-brand-gold transition-all duration-300 gold-glow flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded bg-brand-ivory border border-brand-border flex items-center justify-center text-brand-navy mb-6">
+                <!-- Line Icon: Growth / Talent Management -->
+                <svg class="w-6 h-6 stroke-current text-brand-gold" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+              </div>
+              <h3 class="font-serif text-xl font-semibold text-brand-navy mb-3">Talent Management</h3>
+              <p class="text-sm text-brand-slate leading-relaxed mb-6">
+                Focusing on the vital connection between initial onboarding, internal mobility, and employee retention, ensuring hired talent continues to thrive and deliver value over time.
+              </p>
+            </div>
+            <a href="#contact" onclick="setContactPurpose('Recruitment Partnership')" class="text-xs font-bold uppercase tracking-wider text-brand-gold hover:text-brand-navy transition-colors inline-flex items-center gap-1.5">
+              Explore Talent Management &rarr;
+            </a>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="bg-brand-white p-8 rounded border border-brand-border hover:border-brand-gold transition-all duration-300 gold-glow flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded bg-brand-ivory border border-brand-border flex items-center justify-center text-brand-navy mb-6">
+                <!-- Line Icon: Pipeline / Workforce Planning -->
+                <svg class="w-6 h-6 stroke-current text-brand-gold" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+              </div>
+              <h3 class="font-serif text-xl font-semibold text-brand-navy mb-3">Workforce Development</h3>
+              <p class="text-sm text-brand-slate leading-relaxed mb-6">
+                Assisting leadership in assessing skills requirements, mapping future pipeline gaps, and developing hiring strategies that adapt seamlessly to evolving industry shifts.
+              </p>
+            </div>
+            <a href="#contact" onclick="setContactPurpose('Hiring or Talent Acquisition')" class="text-xs font-bold uppercase tracking-wider text-brand-gold hover:text-brand-navy transition-colors inline-flex items-center gap-1.5">
+              Workforce Planning &rarr;
+            </a>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="bg-brand-white p-8 rounded border border-brand-border hover:border-brand-gold transition-all duration-300 gold-glow flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded bg-brand-ivory border border-brand-border flex items-center justify-center text-brand-navy mb-6">
+                <!-- Line Icon: Program Coordination -->
+                <svg class="w-6 h-6 stroke-current text-brand-gold" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+              </div>
+              <h3 class="font-serif text-xl font-semibold text-brand-navy mb-3">Recruitment Program Management</h3>
+              <p class="text-sm text-brand-slate leading-relaxed mb-6">
+                Coordinating multi-stakeholder recruitment initiatives, interviewing calibration sessions, candidate workflow optimization, and talent tool implementations.
+              </p>
+            </div>
+            <a href="#contact" onclick="setContactPurpose('Recruitment Partnership')" class="text-xs font-bold uppercase tracking-wider text-brand-gold hover:text-brand-navy transition-colors inline-flex items-center gap-1.5">
+              Program Inquiries &rarr;
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 4: FOR EMPLOYERS                                       -->
+    <!-- ============================================================== -->
+    <section id="for-employers" class="py-20 md:py-28 bg-brand-white border-b border-brand-border">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-gold">Partnership for Hiring Leaders</span>
+            <h2 class="font-serif text-3xl md:text-4xl text-brand-navy leading-tight">
+              Let’s Find the Talent That Moves Your Organization Forward.
+            </h2>
+            
+            <div class="space-y-4 text-brand-slate text-base leading-relaxed">
+              <p>
+                Every organization has unique hiring priorities. Understanding your business, team dynamics, and talent requirements is an important first step toward identifying the right people.
+              </p>
+              <p>
+                I value clear communication, thoughtful candidate engagement, and a recruitment approach that considers both immediate hiring needs and broader organizational goals.
+              </p>
+            </div>
+
+            <div class="space-y-3 pt-2">
+              <div class="flex items-start gap-3">
+                <span class="mt-1 text-brand-gold font-bold">&#10003;</span>
+                <span class="text-sm text-brand-navy">Clarify authentic role requirements and core success competencies</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="mt-1 text-brand-gold font-bold">&#10003;</span>
+                <span class="text-sm text-brand-navy">Engage passive talent through tailored, respectful representation</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="mt-1 text-brand-gold font-bold">&#10003;</span>
+                <span class="text-sm text-brand-navy">Streamline interview protocols to preserve momentum and candidate interest</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="mt-1 text-brand-gold font-bold">&#10003;</span>
+                <span class="text-sm text-brand-navy">Ensure organizational culture and strategic vision are articulated accurately</span>
+              </div>
+            </div>
+
+            <div class="pt-6">
+              <a href="#contact" onclick="setContactPurpose('Hiring or Talent Acquisition')" class="px-8 py-3.5 bg-brand-navy hover:bg-brand-gold text-white font-medium text-xs uppercase tracking-widest transition-colors rounded shadow-sm inline-block">
+                Discuss Your Hiring Needs
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="bg-brand-ivory p-8 md:p-10 rounded-lg border border-brand-border space-y-6">
+              <h3 class="font-serif text-2xl text-brand-navy">Strategic Collaboration Framework</h3>
+              <p class="text-sm text-brand-slate leading-relaxed">
+                A collaborative approach ensures your brand is represented in the market with the highest degree of professionalism:
+              </p>
+              
+              <div class="space-y-4">
+                <div class="p-4 bg-brand-white rounded border border-brand-border">
+                  <span class="text-xs font-bold uppercase text-brand-gold">Phase 01: Discovery &amp; Profile Calibration</span>
+                  <p class="text-xs text-brand-navy mt-1">Deep-dive discovery with hiring leaders to define required capabilities, team culture, and business targets.</p>
+                </div>
+                <div class="p-4 bg-brand-white rounded border border-brand-border">
+                  <span class="text-xs font-bold uppercase text-brand-gold">Phase 02: Market Mapping &amp; Thoughtful Outreach</span>
+                  <p class="text-xs text-brand-navy mt-1">Targeted research into relevant talent pools with authentic, customized engagement.</p>
+                </div>
+                <div class="p-4 bg-brand-white rounded border border-brand-border">
+                  <span class="text-xs font-bold uppercase text-brand-gold">Phase 03: Structured Evaluation &amp; Alignment</span>
+                  <p class="text-xs text-brand-navy mt-1">Rigorous, multi-faceted evaluations focused on long-term mutual alignment between both parties.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 5: FOR CANDIDATES                                      -->
+    <!-- ============================================================== -->
+    <section id="for-candidates" class="py-20 md:py-28 bg-brand-ivory border-b border-brand-border">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-gold">Career Progression</span>
+          <h2 class="mt-2 font-serif text-3xl md:text-4xl text-brand-navy">
+            Your Next Opportunity Should Align With Your Potential.
+          </h2>
+          <p class="mt-4 text-brand-slate text-base leading-relaxed">
+            Finding the right opportunity involves more than submitting an application. It is about understanding your strengths, professional goals, and the environments in which you can contribute and grow.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          
+          <div class="bg-brand-white p-7 rounded border border-brand-border space-y-3">
+            <span class="font-serif text-2xl font-bold text-brand-gold">01</span>
+            <h3 class="font-serif text-lg font-semibold text-brand-navy">Clear Communication</h3>
+            <p class="text-xs md:text-sm text-brand-slate leading-relaxed">
+              Transparent updates at every stage of consideration. No ambiguous timelines or unanswered inquiries.
+            </p>
+          </div>
+
+          <div class="bg-brand-white p-7 rounded border border-brand-border space-y-3">
+            <span class="font-serif text-2xl font-bold text-brand-gold">02</span>
+            <h3 class="font-serif text-lg font-semibold text-brand-navy">Contextual Role Briefings</h3>
+            <p class="text-xs md:text-sm text-brand-slate leading-relaxed">
+              In-depth discussions about team priorities, cultural environment, and genuine scope, far beyond simple job bulletins.
+            </p>
+          </div>
+
+          <div class="bg-brand-white p-7 rounded border border-brand-border space-y-3">
+            <span class="font-serif text-2xl font-bold text-brand-gold">03</span>
+            <h3 class="font-serif text-lg font-semibold text-brand-navy">Career Alignment</h3>
+            <p class="text-xs md:text-sm text-brand-slate leading-relaxed">
+              Advocacy for roles that genuinely serve your long-term ambitions rather than brief transactional placements.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Candidate Connection Portal Banner -->
+        <div class="bg-brand-navy text-white rounded-lg p-8 md:p-12 text-center max-w-4xl mx-auto space-y-6">
+          <h3 class="font-serif text-2xl md:text-3xl text-brand-white">Exploring Professional Opportunities?</h3>
+          <p class="text-sm md:text-base text-brand-surface/80 max-w-2xl mx-auto leading-relaxed">
+            While current openings vary, I consistently welcome connections with driven professionals seeking strategic opportunities. Let’s connect and establish a professional dialogue for future openings.
+          </p>
+          <div class="pt-2">
+            <button onclick="setContactPurpose('Candidate Inquiry'); scrollToSection('contact');" class="px-8 py-3.5 bg-brand-gold hover:bg-brand-gold-hover text-brand-navy font-semibold text-xs uppercase tracking-widest transition-colors rounded shadow-md">
+              Connect About Opportunities
+            </button>
+          </div>
+          <p class="text-[11px] text-brand-surface/60 italic">
+            Privacy Assurance: Candidate data and career details are treated with strict confidentiality.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 6: INSIGHTS AND RESOURCES                              -->
+    <!-- ============================================================== -->
+    <section id="insights" class="py-20 md:py-28 bg-brand-white border-b border-brand-border">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-gold">Recruitment Perspectives</span>
+            <h2 class="mt-2 font-serif text-3xl md:text-4xl text-brand-navy">
+              Perspectives on Talent, Hiring, and Professional Growth
+            </h2>
+          </div>
+          <p class="text-xs text-brand-slate uppercase tracking-wider mt-4 md:mt-0">
+            [Sample Concepts &amp; Editable Drafts]
+          </p>
+        </div>
+
+        <!-- Category Badges / Filter Simulation -->
+        <div class="flex flex-wrap gap-2 pb-8 border-b border-brand-border text-xs">
+          <span class="px-3 py-1 bg-brand-navy text-white font-medium rounded-full cursor-pointer">All Categories</span>
+          <span class="px-3 py-1 bg-brand-ivory text-brand-navy border border-brand-border hover:border-brand-gold rounded-full transition-colors cursor-pointer">Talent Acquisition</span>
+          <span class="px-3 py-1 bg-brand-ivory text-brand-navy border border-brand-border hover:border-brand-gold rounded-full transition-colors cursor-pointer">Recruitment Strategy</span>
+          <span class="px-3 py-1 bg-brand-ivory text-brand-navy border border-brand-border hover:border-brand-gold rounded-full transition-colors cursor-pointer">Candidate Experience</span>
+          <span class="px-3 py-1 bg-brand-ivory text-brand-navy border border-brand-border hover:border-brand-gold rounded-full transition-colors cursor-pointer">Workforce Development</span>
+        </div>
+
+        <!-- Articles Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+          
+          <!-- Article Card 1 -->
+          <article class="bg-brand-ivory rounded border border-brand-border overflow-hidden flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between text-xs text-brand-slate">
+                <span class="text-brand-gold font-bold uppercase tracking-wider">Recruitment Strategy</span>
+                <time datetime="2026-09
